@@ -1,8 +1,11 @@
 #include "main.h"
 
 /**
- * Prints small alphabet letters
- * Returns the value of 0
+ 
+ * Print_alphabet -Print alphabet
+ 
+ * 
+ 
  */
 
 void print_alphabet(void)
