@@ -5,6 +5,7 @@
  *
  * Return: return 1 if lowercase, returns 0 otherwise
  *
+ * @c: is an integer type
  */
 int _islower(int c)
 {
