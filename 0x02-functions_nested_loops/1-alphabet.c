@@ -1,22 +1,19 @@
 #include "main.h"
 
 /**
- * Print_alphabet -Print alphabet
-
-*
-
+ * print_alphabet - Print alphabet
+ *
  */
 
 void print_alphabet(void)
 {
-        int alp;
+	int alp;
 
-        for (alp = 97; alp <= 122; alp++)
-        {
-                _putchar(alp);
+	for (alp = 97; alp <= 122; alp++)
+	{
+		_putchar(alp);
 
-        }
-        _putchar('\n');
+	}
+	_putchar('\n');
 }
-
 ~
