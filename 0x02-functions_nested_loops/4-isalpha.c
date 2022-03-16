@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isalpha - Identify alphabets
+ * _isalpha-Identifies alphabets
  *
  * Return: Always return 1 if alphabets otherwise 0
  *
