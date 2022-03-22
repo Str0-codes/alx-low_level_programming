@@ -9,8 +9,9 @@
 
 int _strlen(char *s)
 {
+	int c;
 	 // '\0' represents end of String
-    for(i=0; str[i]!='\0'; ++i);
+    for(c = 0; s[c]!='\0'; c++;
        printf("\nLength of input string: %d",i);
 
     return 0;
