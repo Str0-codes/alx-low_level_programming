@@ -10,10 +10,9 @@
 int _strlen(char *s)
 {
 	int c;
-
-    for(c = 0; s[c]!='\0'; ++c)
-    {
-       printf("\nLength of input string: %d",c);
-    }
-    return 0;
+	for(c = 0; s[c]!='\0'; ++c)
+	{
+		printf("\nLength of input string: %d",c);
+	}
+	return 0;
 }
