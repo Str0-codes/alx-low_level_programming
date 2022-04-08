@@ -1,0 +1,2 @@
+Creates Static libraries
+
