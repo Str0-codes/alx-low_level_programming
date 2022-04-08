@@ -16,6 +16,6 @@ int _isalpha(int c)
 	}
 	else
 	{
-[O		return (0);
+				return (0);
 	}
 }
