@@ -1,28 +1,36 @@
 #include "main.h"
 
 /**
- * create_file - a function that creates a file
- * @filename: the filename
- * @text_content: the string to be ritten to the file
- * Return: return 1 on success and -1 on failure
+ * read_textfile - reads a text file and prints the letters
+ * @filename: filename.
+ * @letters: numbers of letters printed.
+ *
+ * Return: numbers of letters printed. It fails, returns 0.
  */
-
-int create_file(const char *filename, char *text_content)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int i, fd;
+	int fd;
+	ssize_t nrd, nwr;
+	char *buf;
 
-	if (filename == NULL)
-		return (-1);
-	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	if (!filename)
+		return (0);
+
+	fd = open(filename, O_RDONLY);
 
 	if (fd == -1)
-		return (-1);
-	if (text_content)
-	{
-		for (i = 0; text_content[i] != '\0'; i++)
-			;
-		write(fd, text_content, i);
-	}
+		return (0);
+
+	buf = malloc(sizeof(char) * (letters));
+	if (!buf)
+		return (0);
+
+	nrd = read(fd, buf, letters);
+	nwr = write(STDOUT_FILENO, buf, nrd);
+
 	close(fd);
-	return (1);
+
+	free(buf);
+
+	return (nwr);
 }
