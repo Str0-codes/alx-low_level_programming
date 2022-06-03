@@ -1,0 +1,9 @@
+{
+    "C_Cpp_Runner.warnings": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror"
+    ],
+    "code-runner.runInTerminal": true
+}
